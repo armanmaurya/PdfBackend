@@ -1,5 +1,5 @@
 # PdfBackend
-In the project folder there should be requirement.txt just make a virtual environment 
+Start by making a virtual environment in the project directly 
 
 ```bash
  python3 -m venv env
@@ -15,8 +15,13 @@ Now install required packages using `requirement.txt`
 pip install -r requirement.txt
 ```
 
-If every thing works then, run the server 
+If every thing works then, run the migrations 
 
+```shell
+python manage.py makemigrations
+python manage.py migrate
+```
+Now run the server
 ```bash
 python3 manage.py runserver
 ```
